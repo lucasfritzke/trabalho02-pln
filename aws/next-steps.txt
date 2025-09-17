@@ -1,0 +1,5 @@
+docker build -t filme-job .
+docker tag filme-job:latest <account-id>.dkr.ecr.<region>.amazonaws.com/filme-job:latest
+docker push <account-id>.dkr.ecr.<region>.amazonaws.com/filme-job:latest
+
+terraform apply
